@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  idempiere:
+    image: idempiereofficial/idempiere:11-master
+    volumes:
+      - idempiere_config:/opt/idempiere/configuration
+      - idempiere_plugins:/opt/idempiere/plugins
+    environment:
+      - TZ=${TZ}
+    ports:
+      - 8080:8080
+      - 8443:8443
+      - 12612:12612
+
+  postgres:
+    image: postgres:16
+    volumes:
+      - idempiere_data:/var/lib/postgresql/data
+    environment:
+      - TZ=${TZ}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - 5432:5432
+
+volumes:
+  idempiere_data:
+  idempiere_plugins:
+  idempiere_config:
