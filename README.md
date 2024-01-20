@@ -46,7 +46,9 @@ cd docker-idempiere-11
 bash create-env.sh 
 ```
 
-## Deploy iDempiere using `docker-composeT
+## Deploy iDempiere using `docker-compose` command
+
+```
 docker-compose -f docker-stack.yml up -d
 ```
 ## Observing iDempiere docker logs 
