@@ -22,7 +22,7 @@ newgrp docker
 
 `Note:` To update your group access persistently, log off and login back again.
  
-## Install `docker-compose`
+## Install `docker-compose` command
 
 ```bash
 sudo apt install docker-compose
