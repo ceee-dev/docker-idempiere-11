@@ -28,6 +28,18 @@ newgrp docker
 sudo apt install docker-compose
 ```
 
+## Clone the repository to your docker host
+
+```
+git clone https://github.com/ceee-dev/docker-idempiere-11.git
+```
+
+##  Change the directory 
+ 
+```
+cd docker-idempiere-11
+```
+ 
 ## Generate `.env` file
 
 ```bash
