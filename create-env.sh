@@ -1,3 +1,3 @@
-!#/usr/bin/bash
-export TZ=Asia/Colombo
-export POSTGRES_PASSWORD=$(openssl rand -base64 16)
+#!/usr/bin/bash
+echo "TZ=Asia/Colombo" > .env
+echo "POSTGRES_PASSWORD=postgres" >> .env
