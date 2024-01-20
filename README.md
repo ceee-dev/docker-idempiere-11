@@ -1,5 +1,17 @@
 # Idempiere Docker 11  Production Deployment
 
+## Install `docker` on your host system
+
+```bash
+curl -fsSL https://get.docker.com | sudo sh
+```
+
+## Install `docker-compose`
+
+```bash
+sudo apt install docker-compose
+```
+
 ## Generate `.env` file
 
 ```bash
