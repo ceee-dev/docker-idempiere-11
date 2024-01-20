@@ -46,9 +46,7 @@ cd docker-idempiere-11
 bash create-env.sh 
 ```
 
-## Deploy iDempiere using `docker-compose`
-
-```bash
+## Deploy iDempiere using `docker-composeT
 docker-compose -f docker-stack.yml up -d
 ```
 ## Observing iDempiere docker logs 
@@ -56,6 +54,8 @@ docker-compose -f docker-stack.yml up -d
 ```bash
 docker-compose -f docker-stack.yml logs -f
 ```
+
+`Note:`  Press  ```Ctrl + C``` to exit from log interface
 
 ## Removing iDempiere docker 
 
